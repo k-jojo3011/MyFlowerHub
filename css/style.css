@@ -96,6 +96,43 @@ body {
   width: 100%;
 }
 
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;            /* hide links by default */
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;           /* show hamburger on mobile */
+  }
+
+  .nav-links.active {
+    display: flex;            /* show menu when active */
+  }
+}
+
 /* ==============================
    HERO SECTION
 ============================== */

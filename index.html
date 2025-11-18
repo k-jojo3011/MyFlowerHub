@@ -16,6 +16,11 @@
           <img src="images/logo.png" alt="Skyler Logo">
         </a>
       </div>
+          <!-- Hamburger menu -->
+           <button class="hamburger" onclick="toggleMenu()">
+             &#9776; <!-- simple hamburger icon -->
+           </button>
+
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="why-us.html">Why Us</a></li>
@@ -190,6 +195,13 @@
       content.style.display = "block";
       btn.textContent = "Read Less";
     }
+  }
+</script>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
   }
 </script>
 
