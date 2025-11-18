@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why Us | SKYLER</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Skyler Logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-us.html" class="active">Why Us</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+<section class="info-tabs">
+  <div class="tabs-container">
+
+    <!-- LEFT SIDE: main tabs -->
+    <div class="tabs">
+      <button class="tab-link active" onclick="openMainTab(event, 'about-us')">About Us</button>
+      <button class="tab-link" onclick="openMainTab(event, 'why-us')">Why Us</button>
+    </div>
+
+    <!-- RIGHT SIDE: content -->
+    <div class="tab-content">
+
+      <!-- About Us Content -->
+      <div id="about-us" class="main-tab-pane" style="display: block;">
+        <!-- Sub-tabs for About Us -->
+        <div class="sub-tabs">
+          <button class="sub-tab-link active" onclick="openSubTab(event, 'mission')">Mission</button>
+          <button class="sub-tab-link" onclick="openSubTab(event, 'core-values')">Core Values</button>
+          <button class="sub-tab-link" onclick="openSubTab(event, 'sustainability')">Sustainability</button>
+        </div>
+
+        <div class="sub-tab-content">
+          <div id="mission" class="sub-tab-pane" style="display: block;">
+            <h3>Our Mission</h3>
+            <p>To export the highest-quality fresh-cut flowers while building strong, ethical relationships with growers and global buyers.</p>
+          </div>
+
+          <div id="core-values" class="sub-tab-pane">
+            <h3>Our Core Values</h3>
+            <ul>
+              <li>Integrity</li>
+              <li>Quality</li>
+              <li>Reliability</li>
+              <li>Sustainability</li>
+              <li>Customer Commitment</li>
+            </ul>
+          </div>
+
+          <div id="sustainability" class="sub-tab-pane">
+            <h3>Sustainability</h3>
+            <p>We commit to ethical labor, minimizing environmental impact, and supporting local communities.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Us Content -->
+      <div id="why-us" class="main-tab-pane">
+        <h3>Why Us</h3>
+        <p>Flowers grown in Kenya’s high-altitude regions, with export-focused infrastructure and certified growers to ensure quality and reliability worldwide.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-us.html">Why Us</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Our Products</h3>
+      <ul>
+        <li><a href="products.html#flowers">Flowers</a></li>
+        <li><a href="products.html#bouquets">Bouquets</a></li>
+        <li><a href="products.html#plants">Plants</a></li>
+        <li><a href="products.html#gifts">Gifts</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>Email:</p>
+      <p><a href="mailto:marketing@skyler-fel.com">marketing@skyler-fel.com</a></p>
+      <p><a href="mailto:sales@skyler-fel.com">sales@skyler-fel.com</a></p>
+      <p>Call:</p>
+      <p><a href="tel:+254719166196">+254 719 166 196</a></p>
+      <p>Visit:</p>
+      <p><a href="https://www.google.com/maps/place/Airport+North+Road,+Sphinx+Godowns,+Embakasi+district,+P.O.+Box+624,+Eldama+Ravine" target="_blank">
+        Airport North Road, Sphinx Godowns, Embakasi district
+      </a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Skyler Fresh Exporters. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+function openTab(evt, tabName) {
+  // Hide all tab panes
+  const panes = document.querySelectorAll('.tab-pane');
+  panes.forEach(p => p.style.display = 'none');
+
+  // Remove active class from all buttons
+  const tabs = document.querySelectorAll('.tab-link');
+  tabs.forEach(t => t.classList.remove('active'));
+
+  // Show the selected tab and add active class
+  document.getElementById(tabName).style.display = 'block';
+  evt.currentTarget.classList.add('active');
+}
+</script>
+</body>
+</html>

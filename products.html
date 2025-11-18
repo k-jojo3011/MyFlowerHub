@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SKYLER | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+      <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Skyler Logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="why-us.html">Why Us</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+<section class="products-section">
+  <div class="products-background">
+    <div class="container">
+      <h2>Our Products</h2>
+    
+      <!-- Search Box -->
+      <div class="product-search">
+        <input type="text" id="searchInput" placeholder="Search for flowers...">
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="roses">Intermidiate Roses</button>
+        <button class="filter-btn" data-filter="summer">Summer Flowers</button>
+        <button class="filter-btn" data-filter="bouquet">Bouquets</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Roses -->
+        <div class="product" data-category="roses">
+          <img src="images/garden flowers.jpg" alt="Red Roses">
+          <div class="meta">
+                <h4 class="product-name">Intermediate Roses</h4>
+                <p class="product-color">Color: Red</p>
+                <p class="product-category">Category: Roses</p>
+          </div>
+        </div>
+
+
+
+        <div class="product" data-category="roses">
+          <img src="images/redRose.jpg" alt="Pink Roses">
+          <div class="meta">
+            <h4>Premium Roses</h4>
+            <p>Size: Large | Color: Pink</p>
+          </div>
+        </div>
+        <div class="product" data-category="roses">
+          <img src="images/RoseBlue.jpg" alt="Pink Roses">
+          <div class="meta">
+            <h4>Garden Type Roses</h4>
+            <p>Size: Large | Color: Pink</p>
+          </div>
+        </div>
+        <div class="product" data-category="roses">
+          <img src="images/Claveles.jpg" alt="Pink Roses">
+          <div class="meta">
+            <h4>Garden Type Roses</h4>
+            <p>Size: Large | Color: Pink</p>
+          </div>
+        </div>
+         <div class="product" data-category="roses">
+          <img src="images/Claveles.jpg" alt="Pink Roses">
+          <div class="meta">
+            <h4>Standard Spray Roses</h4>
+            <p>Size: Large | Color: Pink</p>
+          </div>
+        </div>
+          <div class="product" data-category="roses">
+          <img src="images/WhiteRose.jpg" alt="Pink Roses">
+          <div class="meta">
+            <h4>Premium Spray Roses</h4>
+            <p>Size: Large | Color: Pink</p>
+          </div>
+        </div>
+
+        <!-- Summer Flowers -->
+        <div class="product" data-category="summer">
+          <img src="images/als2.jpg" alt="White Lily">
+          <div class="meta">
+            <h4>Alstromeria</h4>
+            <p>Size: Small | Color: White</p>
+          </div>
+        </div>
+        <div class="product" data-category="summer">
+          <img src="images/Sky Blue Aster.jpg" alt="Sunflower">
+          <div class="meta">
+            <h4>Asters</h4>
+            <p>Size: Large | Color: Yellow</p>
+          </div>
+        </div>
+        <div class="product" data-category="summer">
+          <img src="images/Blue Limonium.jpg" alt="Sunflower">
+          <div class="meta">
+            <h4>Limonium</h4>
+            <p>Size: Large</p>
+            <p>Color:Yellow</p>
+          </div>
+        </div>
+        <div class="product" data-category="summer">
+          <img src="images/Eryngium x zabelii.jpg" alt="Sunflower">
+          <div class="meta">
+            <h4>Eryngium</h4>
+            <p>Size:Large</p>
+            <p>Color:Yellow</p>
+            <p>Category:Premium</p>
+          </div>
+        </div>
+        <div class="product" data-category="summer">
+          <img src="images/sunflower.jpg" alt="Sunflower">
+          <div class="meta">
+            <h4>lilies</h4>
+            <p>Size: Large | Color: Yellow</p>
+          </div>
+        </div>
+         <div class="product" data-category="summer">
+          <img src="images/sunflower.jpg" alt="Sunflower">
+          <div class="meta">
+            <h4>Solidago</h4>
+            <p>Size: Large | Color: Yellow</p>
+          </div>
+        </div>
+
+        <!-- Bouquets -->
+        <div class="product" data-category="bouquet">
+          <img src="images/bouquet.jpg" alt="Valentine Bouquet">
+          <div class="meta">
+            <h4>Valentine Bouquet</h4>
+            <p>Size: Medium | Colors: Red, Pink</p>
+          </div>
+        </div>
+        <div class="product" data-category="bouquet">
+          <img src="images/bouquets.jpg" alt="Wedding Bouquet">
+          <div class="meta">
+            <h4>Wedding Bouquet</h4>
+            <p>Size: Large | Colors: White, Green</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+
+  <script>
+const searchInput = document.getElementById('searchInput');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const products = document.querySelectorAll('.product');
+
+// Filter by category
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active class from all buttons
+    filterButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.getAttribute('data-filter');
+
+    products.forEach(product => {
+      if(filter === 'all' || product.dataset.category === filter) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Search by name
+searchInput.addEventListener('keyup', () => {
+  const query = searchInput.value.toLowerCase();
+
+  products.forEach(product => {
+    const name = product.querySelector('h4').textContent.toLowerCase();
+    if(name.includes(query)) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+});
+</script>
+
+</section>
+</body>
