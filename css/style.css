@@ -420,7 +420,7 @@ body {
 }
 
 .whyus-image img {
-  width: 80%;
+  width: 50%;
   border-radius: 10px;
 }
 
@@ -571,43 +571,61 @@ body {
 }
 
 
-/* ==============================
-   READ MORE BUTTON
-============================== */
-.read-more-btn {
-  background: lightblue;
-  color: black;
-  padding: 14px 28px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  margin-top: 25px;
-
-  display: block;         /* makes centering possible */
-  margin-left: auto;      /* center */
-  margin-right: auto;     /* center */
+/* ==========================
+   ABOUT US PREVIEW CARDS
+========================== */
+.aboutus-preview {
+  padding: 60px 20px;
+  background: #f7f7f7;
 }
 
-.read-more-btn:hover {
-  background: lightblue !important;
+.aboutus-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.hidden-content {
-  display: none;
-  margin-top: 20px;
-  background: #f8f8f8;
-  padding: 20px;
+.aboutus-card {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
-  line-height: 1.6;
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.responsible-text {
-  text-align: center;
-  margin: 30px 0 0 0; /* spacing above the line */
-  font-size: 1.1rem;
-  color: #1e56a0; /* or any color you like */
-  font-weight: 500;
+
+.aboutus-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
+
+.aboutus-card .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0,0,0,0.5);
+}
+
+.aboutus-card .overlay h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.aboutus-card .overlay p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 
 /* ==============================
    CONTACT FORM

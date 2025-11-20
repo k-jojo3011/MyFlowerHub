@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SKYLER | About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ABOUT US PAGE SPECIFIC STYLES */
+    .aboutus-hero {
+      background-image: url('images/about-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .aboutus-hero h1 {
+      font-size: 36px;
+      background: rgba(0,0,0,0.5);
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+
+    .aboutus-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .aboutus-section h2 {
+      color: #1e56a0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .aboutus-section p, .aboutus-section ul {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .aboutus-section ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Optional: anchor styling */
+    a.anchor {
+      display: block;
+      position: relative;
+      top: -80px; /* offset for fixed navbar */
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Skyler-Sig-01.png" alt="Skyler Logo">
+        </a>
+      </div>
+
+      <button class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-us.html">Why Us</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="aboutus-hero">
+    <h1>About Skyler Fresh Exporters</h1>
+  </section>
+
+  <!-- OUR MISSION -->
+  <a class="anchor" id="mission"></a>
+  <section class="aboutus-section">
+    <h2>Our Mission</h2>
+    <p>
+      To deliver world-class Kenyan flowers and bouquets—fresh, traceable, and sustainably sourced—with seamless global logistics, enabling our partners abroad to delight their customers with premium blooms.
+    </p>
+  </section>
+
+  <!-- CORE VALUES -->
+  <a class="anchor" id="core-values"></a>
+  <section class="aboutus-section">
+    <h2>Our Core Values</h2>
+    <ul>
+      <li><strong>Integrity:</strong> We uphold honesty and transparency in every transaction.</li>
+      <li><strong>Quality:</strong> We deliver only the freshest, finest, and most consistent produce to our clients.</li>
+      <li><strong>Innovation:</strong> We embrace technology and continuous improvement to redefine agricultural trade.</li>
+      <li><strong>Sustainability:</strong> We promote eco-friendly and socially responsible farming practices.</li>
+      <li><strong>Partnership:</strong> We build lasting relationships with growers, clients, and communities.</li>
+      <li><strong>Excellence:</strong> We set high standards in service delivery and operational efficiency.</li>
+    </ul>
+  </section>
+
+  <!-- SUSTAINABILITY -->
+  <a class="anchor" id="sustainability"></a>
+  <section class="aboutus-section">
+    <h2>Sustainability</h2>
+    <p>
+      At Skyler Fresh, we are committed to responsible practices across all aspects of our operations:
+    </p>
+    <ul>
+      <li>Ethical labor and fair sourcing practices at farm level.</li>
+      <li>Minimizing environmental footprint via efficient logistics, waste reduction, and responsible packaging.</li>
+      <li>Investing in local community development and empowering our grower partners.</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3 class="black-text1">Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li><a href="what-we-do.html">What We Do</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3 class="black-text1">Contact Us</h3>
+        <p class="black-text">Email:</p>
+        <p><a href="mailto:marketing@skyler-fel.com">marketing@skyler-fel.com</a></p>
+        <p><a href="mailto:sales@skyler-fel.com">sales@skyler-fel.com</a></p>
+        <p class="black-text">Call:</p>
+        <p><a href="tel:+254719166196">+254 719 166 196</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Skyler Fresh Exporters. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
