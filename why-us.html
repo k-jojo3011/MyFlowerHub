@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Why Us | SKYLER</title>
+  <title>SKYLER | Home</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- NAVBAR -->
   <header class="navbar">
     <div class="container">
       <div class="logo">
@@ -15,67 +16,50 @@
           <img src="images/logo.png" alt="Skyler Logo">
         </a>
       </div>
+          <!-- Hamburger menu -->
+           <button class="hamburger" onclick="toggleMenu()">
+             &#9776; <!-- simple hamburger icon -->
+           </button>
+
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="why-us.html" class="active">Why Us</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="why-us.html">Why Us</a></li>
         <li><a href="what-we-do.html">What We Do</a></li>
         <li><a href="products.html">Our Products</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </header>
-<section class="info-tabs">
-  <div class="tabs-container">
 
-    <!-- LEFT SIDE: main tabs -->
-    <div class="tabs">
-      <button class="tab-link active" onclick="openMainTab(event, 'about-us')">About Us</button>
-      <button class="tab-link" onclick="openMainTab(event, 'why-us')">Why Us</button>
+  <!-- HERO SECTION -->
+<section class="whyus-hero" style="background-image: url('images/Claveles.jpg');">
+  <div class="overlay">
+    <h1>Why Us</h1>
+  </div>
+</section>
+<section class="whyus-content">
+  <div class="whyus-row">
+
+    <div class="whyus-image">
+      <img src="images/rose.1.jpg" alt="Why Us Image">
     </div>
 
-    <!-- RIGHT SIDE: content -->
-    <div class="tab-content">
-
-      <!-- About Us Content -->
-      <div id="about-us" class="main-tab-pane" style="display: block;">
-        <!-- Sub-tabs for About Us -->
-        <div class="sub-tabs">
-          <button class="sub-tab-link active" onclick="openSubTab(event, 'mission')">Mission</button>
-          <button class="sub-tab-link" onclick="openSubTab(event, 'core-values')">Core Values</button>
-          <button class="sub-tab-link" onclick="openSubTab(event, 'sustainability')">Sustainability</button>
-        </div>
-
-        <div class="sub-tab-content">
-          <div id="mission" class="sub-tab-pane" style="display: block;">
-            <h3>Our Mission</h3>
-            <p>To export the highest-quality fresh-cut flowers while building strong, ethical relationships with growers and global buyers.</p>
-          </div>
-
-          <div id="core-values" class="sub-tab-pane">
-            <h3>Our Core Values</h3>
-            <ul>
-              <li>Integrity</li>
-              <li>Quality</li>
-              <li>Reliability</li>
-              <li>Sustainability</li>
-              <li>Customer Commitment</li>
-            </ul>
-          </div>
-
-          <div id="sustainability" class="sub-tab-pane">
-            <h3>Sustainability</h3>
-            <p>We commit to ethical labor, minimizing environmental impact, and supporting local communities.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Why Us Content -->
-      <div id="why-us" class="main-tab-pane">
-        <h3>Why Us</h3>
-        <p>Flowers grown in Kenya’s high-altitude regions, with export-focused infrastructure and certified growers to ensure quality and reliability worldwide.</p>
-      </div>
-
+    <div class="whyus-text">
+      <h2>Why Choose Skyler Fresh Exporters</h2>
+      <p>
+        Flowers grown in Kenya’s high-altitude regions, with world-class post-harvest handling, 
+        cold chain logistics, and reliable certified growers. We ensure consistency, 
+        freshness, and guaranteed export standards for all global buyers.
+      </p>
+      <ul>
+        <li>High-altitude premium flower farms</li>
+        <li>Strict quality assurance</li>
+        <li>Reliable cold chain export logistics</li>
+        <li>Ethical and sustainable farming practices</li>
+        <li>Flexible, buyer-focused solutions</li>
+      </ul>
     </div>
+  </div>
   </div>
 </section>
 
