@@ -58,7 +58,6 @@
   </style>
 </head>
 <body>
-
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="container">
@@ -67,17 +66,16 @@
           <img src="images/Skyler-Sig-01.png" alt="Skyler Logo">
         </a>
       </div>
-
-      <button class="hamburger" onclick="toggleMenu()">
-        &#9776;
-      </button>
+          <!-- Hamburger menu -->
+           <button class="hamburger" onclick="toggleMenu()">
+             &#9776; <!-- simple hamburger icon -->
+           </button>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="why-us.html">Why Us</a></li>
         <li><a href="what-we-do.html">What We Do</a></li>
         <li><a href="products.html">Our Products</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -124,38 +122,79 @@
       <li>Investing in local community development and empowering our grower partners.</li>
     </ul>
   </section>
+<footer>
+  <div class="footer-container">
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
+    <!-- Social Media Column -->
+    <div class="footer-column">
+      <h3 class="White-text1">Skyler Fresh Exporters</h3>
+      <p class="black-text">Follow Us</p>
 
-      <div class="footer-column">
-        <h3 class="black-text1">Quick Links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="why-us.html">Why Us</a></li>
-          <li><a href="what-we-do.html">What We Do</a></li>
-          <li><a href="products.html">Our Products</a></li>
-          <li><a href="about.html" class="active">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?id=61583462456131" target="_blank">
+          <img src="images/facebook.jpg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/syker_fel/" target="_blank">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/company/skyler-fresh/" target="_blank">
+          <img src="images/linkedin.jpg" alt="LinkedIn">
+        </a>
       </div>
+    </div> <!-- END OF COLUMN 1 -->
 
-      <div class="footer-column">
-        <h3 class="black-text1">Contact Us</h3>
-        <p class="black-text">Email:</p>
-        <p><a href="mailto:marketing@skyler-fel.com">marketing@skyler-fel.com</a></p>
-        <p><a href="mailto:sales@skyler-fel.com">sales@skyler-fel.com</a></p>
-        <p class="black-text">Call:</p>
-        <p><a href="tel:+254719166196">+254 719 166 196</a></p>
-      </div>
 
-    </div>
+    <!-- Quick Links Column -->
+    <div class="footer-column">
+      <h3 class="black-text1">Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-us.html">Why Us</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div> <!-- END OF COLUMN 2 -->
 
-    <div class="footer-bottom">
-      <p>© 2025 Skyler Fresh Exporters. All rights reserved.</p>
-    </div>
-  </footer>
+
+    <!-- Products Column -->
+    <div class="footer-column">
+      <h3 class="black-text1">Our Products</h3>
+      <ul>
+        <li><a href="products.html#flowers">Roses</a></li>
+        <li><a href="products.html#bouquets">Bouquets</a></li>
+        <li><a href="products.html#plants">Summer Flowers</a></li>
+        <li><a href="products.html#gifts">Chrysanthemums</a></li>
+      </ul>
+    </div> <!-- END OF COLUMN 3 -->
+
+
+    <!-- Contact Column -->
+    <div class="footer-column">
+      <h3 class="black-text1">Contact Us</h3>
+
+      <p class="black-text">Email:</p>
+      <p><a href="mailto:marketing@skyler-fel.com">marketing@skyler-fel.com</a></p>
+      <p><a href="mailto:sales@skyler-fel.com">sales@skyler-fel.com</a></p>
+
+      <p class="black-text">Call:</p>
+      <p><a href="tel:+254719166196">+254 719 166 196</a></p>
+
+      <p class="black-text">Visit:</p>
+      <p>
+        <a href="https://www.google.com/maps/place/Airport+North+Road,+Sphinx+Godowns,+Embakasi+district,+P.O.+Box+624,+Eldama+Ravine" target="_blank">
+          Airport North Road, Sphinx Godowns, Embakasi district
+        </a>
+      </p>
+    </div> <!-- END OF COLUMN 4 -->
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Skyler Fresh Exporters. All rights reserved.</p>
+  </div>
+</footer>
 
   <script>
     function toggleMenu() {
@@ -163,6 +202,7 @@
       navLinks.classList.toggle('active');
     }
   </script>
-
+  
+</script>
 </body>
 </html>

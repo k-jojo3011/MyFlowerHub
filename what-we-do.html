@@ -8,17 +8,24 @@
 </head>
 <body>
 
+  
+  <!-- NAVBAR -->
   <header class="navbar">
     <div class="container">
-        <div class="logo">
+      <div class="logo">
         <a href="index.html">
-            <img src="images/logo.png" alt="Skyler Logo">
+          <img src="images/Skyler-Sig-01.png" alt="Skyler Logo">
         </a>
       </div>
+          <!-- Hamburger menu -->
+           <button class="hamburger" onclick="toggleMenu()">
+             &#9776; <!-- simple hamburger icon -->
+           </button>
+
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="why-us.html">Why Us</a></li>
-        <li><a href="what-we-do.html" class="active">What We Do</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
         <li><a href="products.html">Our Products</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -93,39 +100,69 @@
 <footer>
   <div class="footer-container">
 
+    <!-- Social Media Column -->
     <div class="footer-column">
-      <h3>Quick Links</h3>
+      <h3 class="White-text1">Skyler Fresh Exporters</h3>
+      <p class="black-text">Follow Us</p>
+
+      <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?id=61583462456131" target="_blank">
+          <img src="images/facebook.jpg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/syker_fel/" target="_blank">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/company/skyler-fresh/" target="_blank">
+          <img src="images/linkedin.jpg" alt="LinkedIn">
+        </a>
+      </div>
+    </div> <!-- END OF COLUMN 1 -->
+
+
+    <!-- Quick Links Column -->
+    <div class="footer-column">
+      <h3 class="black-text1">Quick Links</h3>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="why-us.html">Why Us</a></li>
         <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="products.html">Our Products</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-    </div>
+    </div> <!-- END OF COLUMN 2 -->
 
+
+    <!-- Products Column -->
     <div class="footer-column">
-      <h3>Our Products</h3>
+      <h3 class="black-text1">Our Products</h3>
       <ul>
-        <li><a href="products.html#flowers">Flowers</a></li>
+        <li><a href="products.html#flowers">Roses</a></li>
         <li><a href="products.html#bouquets">Bouquets</a></li>
         <li><a href="products.html#plants">Plants</a></li>
         <li><a href="products.html#gifts">Gifts</a></li>
       </ul>
-    </div>
+    </div> <!-- END OF COLUMN 3 -->
 
+
+    <!-- Contact Column -->
     <div class="footer-column">
-      <h3>Contact Us</h3>
-      <p>Email:</p>
+      <h3 class="black-text1">Contact Us</h3>
+
+      <p class="black-text">Email:</p>
       <p><a href="mailto:marketing@skyler-fel.com">marketing@skyler-fel.com</a></p>
       <p><a href="mailto:sales@skyler-fel.com">sales@skyler-fel.com</a></p>
-      <p>Call:</p>
+
+      <p class="black-text">Call:</p>
       <p><a href="tel:+254719166196">+254 719 166 196</a></p>
-      <p>Visit:</p>
-      <p><a href="https://www.google.com/maps/place/Airport+North+Road,+Sphinx+Godowns,+Embakasi+district,+P.O.+Box+624,+Eldama+Ravine" target="_blank">
-        Airport North Road, Sphinx Godowns, Embakasi district
-      </a></p>
-    </div>
+
+      <p class="black-text">Visit:</p>
+      <p>
+        <a href="https://www.google.com/maps/place/Airport+North+Road,+Sphinx+Godowns,+Embakasi+district,+P.O.+Box+624,+Eldama+Ravine" target="_blank">
+          Airport North Road, Sphinx Godowns, Embakasi district
+        </a>
+      </p>
+    </div> <!-- END OF COLUMN 4 -->
 
   </div>
 
@@ -133,6 +170,12 @@
     <p>© 2025 Skyler Fresh Exporters. All rights reserved.</p>
   </div>
 </footer>
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
 
 
 </body>
